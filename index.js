@@ -24,19 +24,13 @@ const playSound = (pad) => {
   }
 };
 
-const innerBtn = document.querySelectorAll(".inner");
-// console.log(innerBtn);
-innerBtn[0].onclick = () => {
-  innerBtn[0].classList.toggle("right-position");
-  // console.log("hello");
-  // console.log(innerBtn[0].style.right);
-  // if (innerBtn[0].style.right === "") {
-  //   innerBtn[0].style.position = "absolute";
-  //   // innerBtn[0].style.left = "";
-  //   innerBtn[0].style.right = "0px";
-  // } else {
-  //   // innerBtn[0].style.left = "0px";
-  //   innerBtn[0].style.right = "";
-  //   innerBtn[0].style.position = "absolute";
-  // }
+const handleToggle = (element) => {
+  console.log("hh");
+  if (element.style.right == 0) {
+    element.style.right = 0;
+    element.style.left = "";
+  } else if (element.style.left == 0) {
+    element.style.left = 0;
+    element.style.right = "";
+  }
 };
