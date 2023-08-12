@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #8d8d8d !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.italic {
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+}
+.fa-brands {
+  font-size: medium;
+}
+#drum-machine {
+  outline: 4px solid orange;
+  width: 660px;
+  text-align: end;
+  background-color: #b3b3b3;
+}
+#display {
+  display: flex;
+  justify-content: space-around;
+}
+#display > div {
+  width: 45%;
+  text-align: start;
+}
+#drum-pads {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+}
+.drum-pad {
+  width: 80px;
+  height: 65px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: grey;
+  margin-top: 10px;
+  box-shadow: black 3px 3px 5px;
+}
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select {
+  margin: auto;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+  position: relative;
+}
+.inner {
+  width: 23px;
+  height: 18px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 0 1px 0 1px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+}
+#display-output {
+  width: 200px;
+  background-color: gray;
+  margin: 15px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.right-position {
+  position: absolute;
+  right: 0;
+}
