@@ -25,12 +25,11 @@ const playSound = (pad) => {
 };
 
 const handleToggle = (element) => {
-  console.log("hh");
-  if (element.style.right == 0) {
-    element.style.right = 0;
-    element.style.left = "";
-  } else if (element.style.left == 0) {
+  if (element.style.left == 0) {
     element.style.left = 0;
     element.style.right = "";
+  } else if (element.style.right == 0) {
+    element.style.right = 0;
+    element.style.left = "";
   }
 };

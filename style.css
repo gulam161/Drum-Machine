@@ -31,7 +31,7 @@ body {
 }
 #display > div {
   width: 45%;
-  text-align: start;
+  text-align: center;
 }
 #drum-pads {
   display: grid !important;
